@@ -26,12 +26,18 @@ B*null(D);
 
 % part C
 
-B = [1 3 2 4 9; 2 2 3 4 3];
 A = [1 2; -1 -2; 1 2];
+B = [1 3 2 4 9; 2 2 3 4 3];
 
 D = A*B;
 nullD = null(D);
 nullDD = null(D'*D);
 
-problemnull = null(B'*A'*A*B + B'*B)
-nullB = null(B)
+problemnull = null(B'*A'*A*B + B'*B);
+nullB = null(B);
+
+if nullB == problemnull
+    1
+else
+    0
+end
