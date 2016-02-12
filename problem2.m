@@ -15,7 +15,7 @@ x3 = B3*y
 
 % method 1
 Aavg = 1/3*(A+A2+A3);
-x_avg = inv(Aavg'*Aavg)*Aavg'*y
+x_ae = inv(Aavg'*Aavg)*Aavg'*y
 
 
 % method 2
