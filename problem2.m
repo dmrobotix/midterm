@@ -15,24 +15,20 @@ x3 = B3*y;
 
 % method 1
 Aavg = 1/3*(A+A2+A3);
-x_avg = inv(Aavg'*Aavg)*Aavg'*y;
-rms_avg = sqrt(1/1*norm(Aavg*x_avg-y)^2)
+x_avg = inv(Aavg'*Aavg)*Aavg'*y
+rms_avg = sqrt(1/1*norm(Aavg*x_avg-y)^2);
 
 
 % method 2
-
-x_ea = 1/3*(x1+x2+x3);
-rms_ea = sqrt(1/3*(norm(A*x_ea-y)^2)+(norm(A2*x_ea-y)^2)+(norm(A3*x_ea-y)^2))
-rms_ea1 = sqrt(1/1*norm(A*x1-y)^2)
-rms_ea2 = sqrt(1/1*norm(A2*x2-y)^2)
-rms_ea3 = sqrt(1/1*norm(A3*x3-y)^2)
+x_ea = 1/3*(x1+x2+x3)
+rms_ea = sqrt(1/3*(norm(A*x_ea-y)^2)+(norm(A2*x_ea-y)^2)+(norm(A3*x_ea-y)^2));
+rms_ea1 = sqrt(1/1*norm(A*x1-y)^2);
+rms_ea2 = sqrt(1/1*norm(A2*x2-y)^2);
+rms_ea3 = sqrt(1/1*norm(A3*x3-y)^2);
 
 
 % method 3
-
 r = zeros(3,3);
-
-
 r(1,1) = norm(A*x1-y)^2;
 r(1,2) = norm(A*x2-y)^2;
 r(1,3) = norm(A*x3-y)^2;
@@ -50,6 +46,8 @@ for j =1:3
         snorm3 = snorm + r(3,j);
 end
 
-rms1 = sqrt(1/3*snorm1)
-rms2 = sqrt(1/3*snorm2)
-rms3 = sqrt(1/3*snorm3)
+rms1 = sqrt(1/3*snorm1);
+rms2 = sqrt(1/3*snorm2);
+rms3 = sqrt(1/3*snorm3);
+
+x3
