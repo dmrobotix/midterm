@@ -72,4 +72,4 @@ u2'*u3
 %part j
 % example when not true
 % the only way A^(T)B=0 is when B is in the null(A^(T)). Since the null is
-% the leftover dimension of the tranpose of A, {
+% the leftover dimension of the tranpose of A, [A B] will always be square.

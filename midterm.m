@@ -65,3 +65,11 @@ u1'*u3
 u2'*u2
 u3'*u3
 u2'*u3
+
+% all of these have ui^Tuj greater than or equal to 0. but they are not
+% independent.
+
+%part j
+% example when not true
+% the only way A^(T)B=0 is when B is in the null(A^(T)). Since the null is
+% the leftover dimension of the tranpose of A, [A B] will always be square.
