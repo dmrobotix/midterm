@@ -1,5 +1,6 @@
 % Problem 2
 % Midterm 2016
+% CMPE-240
 % V. Margot Paez
 
 y = [1 2 3]';
