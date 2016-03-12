@@ -1,3 +1,5 @@
+%% Problem 4
+
 % data for midterm problem on an E-911 system
 c = 0.3;  % speed of light in m/ns
 S = [ -20000 1000 -3000 4000 -3500 1000 4000 -4000 6000;
@@ -52,5 +54,11 @@ while flag
     end
    
 end
+
+%% Results
+% the more than likely incorrect approximate solution for X_ls = [x1, x2,
+% tau]
+X_ls
+
 iterations = 1:length(r_norms);
 plot(iterations,r_norms);
